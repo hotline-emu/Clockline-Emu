@@ -12,9 +12,12 @@ namespace ClockLine_Emu
 {
     public partial class Form1 : Form
     {
+        public static string physicalLocation;
+
         public Form1()
         {
             InitializeComponent();
+            initializeLocation();
         }
 
         private void Form1_Load(object sender, EventArgs e)
@@ -29,7 +32,13 @@ namespace ClockLine_Emu
 
         private void label1_Click(object sender, EventArgs e)
         {
+            //TODO, remove this bullshit.
+        }
 
+        private void initializeLocation()
+        {
+            physicalLocation = "Norfolk, VA"; // TODO, actually get the location.
+            location.Text = physicalLocation;
         }
     }
 }
