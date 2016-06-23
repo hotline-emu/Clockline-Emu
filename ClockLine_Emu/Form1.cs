@@ -24,7 +24,7 @@ namespace ClockLine_Emu
 
         private void timer1_Tick(object sender, EventArgs e)
         {
-            label1.Text = DateTime.Now.ToString("HH:mm:ss tt");
+            label1.Text = DateTime.Now.ToString("hh:mm tt");
         }
 
         private void label1_Click(object sender, EventArgs e)
