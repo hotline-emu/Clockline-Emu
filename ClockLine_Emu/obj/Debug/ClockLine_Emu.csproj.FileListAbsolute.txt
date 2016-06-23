@@ -1,0 +1,9 @@
+c:\users\jmgal\projects\ClockLine_Emu\ClockLine_Emu\bin\Debug\ClockLine_Emu.exe.config
+c:\users\jmgal\projects\ClockLine_Emu\ClockLine_Emu\bin\Debug\ClockLine_Emu.exe
+c:\users\jmgal\projects\ClockLine_Emu\ClockLine_Emu\bin\Debug\ClockLine_Emu.pdb
+c:\users\jmgal\projects\ClockLine_Emu\ClockLine_Emu\obj\Debug\ClockLine_Emu.csprojResolveAssemblyReference.cache
+c:\users\jmgal\projects\ClockLine_Emu\ClockLine_Emu\obj\Debug\ClockLine_Emu.Form1.resources
+c:\users\jmgal\projects\ClockLine_Emu\ClockLine_Emu\obj\Debug\ClockLine_Emu.Properties.Resources.resources
+c:\users\jmgal\projects\ClockLine_Emu\ClockLine_Emu\obj\Debug\ClockLine_Emu.csproj.GenerateResource.Cache
+c:\users\jmgal\projects\ClockLine_Emu\ClockLine_Emu\obj\Debug\ClockLine_Emu.exe
+c:\users\jmgal\projects\ClockLine_Emu\ClockLine_Emu\obj\Debug\ClockLine_Emu.pdb
