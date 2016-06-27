@@ -12,5 +12,5 @@ The first two lines really sum up exactly what this is. It is just a clock appli
 6. Profit.  
 
 ###### Notes:  
-* Currently, the location is hardcoded and not dynamic.
+* Currently, the location is using a free API that is keyless. It is not the best, but it was free, keyless, and working.  
 * There are plans to add more stuff in the future, but the design is not going in any particular direction. This is just a toy sandbox to tinker with stuff when I get bored at the moment.  
