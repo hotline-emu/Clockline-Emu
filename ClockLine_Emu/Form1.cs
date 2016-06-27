@@ -7,6 +7,7 @@ using System.Linq;
 using System.Text;
 using System.Threading.Tasks;
 using System.Windows.Forms;
+using System.Device.Location;
 
 namespace ClockLine_Emu
 {
@@ -32,8 +33,17 @@ namespace ClockLine_Emu
 
         private void initializeLocation()
         {
+            GeoCoordinateWatcher myLocation = new GeoCoordinateWatcher(GeoPositionAccuracy.High);            
+            myLocation.TryStart(false, TimeSpan.FromMilliseconds(1000));
+
             physicalLocation = "Norfolk, VA"; // TODO, actually get the location.
-            location.Text = physicalLocation;
+
+            var latitude = myLocation.Position.Location.Latitude;
+            var longitude = myLocation.Position.Location.Longitude;
+            
+            location.Text = String.Format("{0}, {1}", latitude, longitude);
+
+            
         }
     }
 }
