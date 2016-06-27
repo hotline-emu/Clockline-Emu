@@ -30,6 +30,9 @@ namespace ClockLine_Emu
         /// Update the timer on each tick.
         /// Currently set to only report Hours:Minutes, but easily configurable to whatever.
         /// View MSDN documentation if you want to modify this yourself.
+        /// 
+        /// The currently used API key is free, and keyless.  As this is stored publically, it was a design decision to not
+        /// leave a key issued by someone else, leading to their API, open for everyone to see.
         /// </summary>
         /// <param name="sender"></param>
         /// <param name="e"></param>
