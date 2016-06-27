@@ -48,9 +48,8 @@ namespace ClockLine_Emu
         {
             try
             {
-                string netLocation = new WebClient().DownloadString("http://ip-api.com/json"); // First available free API found. Not the most accurate.
-                string[] netLocationArray = netLocation.Split(','); // IDK why I am not allowed to do this on one line.
-                location.Text = netLocationArray[1].Replace("\"city\":\"", "").TrimEnd('\"'); // Ugly AF, give me just the city.
+                string[] netLocation = new WebClient().DownloadString("http://ip-api.com/json").Split(','); // First available free API found. Not the most accurate.                
+                location.Text = netLocation[1].Replace("\"city\":\"", "").TrimEnd('\"'); // All I care about is the city.
             }
             catch (Exception)
             {
