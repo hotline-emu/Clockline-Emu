@@ -30,11 +30,6 @@ namespace ClockLine_Emu
             label1.Text = DateTime.Now.ToString("hh:mm tt");
         }
 
-        private void label1_Click(object sender, EventArgs e)
-        {
-            //TODO, remove this bullshit.
-        }
-
         private void initializeLocation()
         {
             physicalLocation = "Norfolk, VA"; // TODO, actually get the location.
