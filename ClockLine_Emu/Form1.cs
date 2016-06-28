@@ -49,7 +49,9 @@ namespace ClockLine_Emu
             try
             {
                 string[] netLocation = new WebClient().DownloadString("http://ip-api.com/json").Split(','); // First available free API found. Not the most accurate.                
-                location.Text = netLocation[1].Replace("\"city\":\"", "").TrimEnd('\"'); // All I care about is the city.
+                string city = netLocation[1].Replace("\"city\":\"", "").TrimEnd('\"'); // Trim down to just the city.
+                string stateCode = netLocation[9].Replace("\"region\":\"", "").TrimEnd('\"'); // Trim down to just the state.
+                location.Text = String.Format("{0}, {1}", city, stateCode);
             }
             catch (Exception)
             {
